@@ -1,7 +1,7 @@
 <?php
-namespace Fhsinchy\Inspire\Controllers;
+namespace Scout\Inspire\Controllers;
 
-use Fhsinchy\Inspire\Inspire;
+use Scout\Inspire\Inspire;
 
 class InspirationController
 {

@@ -1,8 +1,9 @@
 <?php
 
-namespace Fhsinchy\Inspire\Providers;
+namespace Scout\Inspire\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Scout\Inspire\Console\Commands\CustomCommand;
 
 class InspirationProvider extends ServiceProvider
 {
@@ -15,5 +16,12 @@ class InspirationProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
         $this->loadViewsFrom(__DIR__.'/../views', 'inspire');
+
+        // Register commands
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                CustomCommand::class,
+            ]);
+        }
     }
 }

@@ -1,17 +1,19 @@
 {
-    "name": "fhsinchy/inspire",
+    "name": "scout/inspire",
     "autoload": {
         "psr-4": {
-            "Fhsinchy\\Inspire\\": "src/"
+            "Scout\\Inspire\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Farhan Hasin Chowdhury",
-            "email": "shovik.is.here@gmail.com"
+            "name": "Roberth Rodriguez",
+            "email": "roberth.rodriguez@laravelthewebartisan.com"
         }
     ],
     "require": {
-        "jeroen-g/laravel-packager": "^2.9"
+        "yajra/laravel-datatables": "^10.0",
+        "yajra/laravel-datatables-html": "^10.0",
+        "yajra/laravel-datatables-buttons": "^10.0"
     }
 }
